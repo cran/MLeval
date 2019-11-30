@@ -42,7 +42,7 @@ evalm <- function(list1,gnames=NULL,title='',cols=NULL,silent=FALSE,
                  showplots=TRUE,positive=NULL,plots=c('prg','pr','r','cc')){
   
   if(silent==FALSE){
-    message('***MLeval: Machine Learning Evaluation in R***')
+    message('***MLeval: Machine Learning Model Evaluation in R***')
   }
   
   ## if not a list convert to list
@@ -487,12 +487,12 @@ evalm <- function(list1,gnames=NULL,title='',cols=NULL,silent=FALSE,
   names(stdrl) <- gnames
   
   ## reformatting
-  for (dt in seq(1,length(list1))){
+  for (dt in seq(1,length(gnames))){
     probl[[dt]] <- probl[[dt]][ , -which(names(probl[[dt]]) %in% c("predt"))]
   }
   
   ## print AUCs
-  for (n in seq(1,length(list1))){
+  for (n in seq(1,length(gnames))){
     if(silent==FALSE){
       message(paste(gnames[n],'AUC-ROC =',aucs[n]))
     }
