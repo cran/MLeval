@@ -42,7 +42,7 @@ evalm <- function(list1,gnames=NULL,title='',cols=NULL,silent=FALSE,
                  showplots=TRUE,positive=NULL,plots=c('prg','pr','r','cc')){
   
   if(silent==FALSE){
-    message('***MLeval: Machine Learning Model Evaluation in R***')
+    message('***MLeval: Machine Learning Model Evaluation***')
   }
   
   ## if not a list convert to list
@@ -69,11 +69,13 @@ evalm <- function(list1,gnames=NULL,title='',cols=NULL,silent=FALSE,
         message('Averaging probs.')
       }
     }
-  }else if (class(list1[[1]]) == 'data.frame'){
+  }else if (class(list1[[1]])[1] == 'data.frame'){
     input <- 'normal'
     if(silent==FALSE){
       message('Input: data frame of probabilities of observed labels')
     }
+  }else{
+    stop('Data frame or Caret train object required please.')
   }
   
   ## if w/o group names, make these

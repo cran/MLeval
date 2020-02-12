@@ -1,7 +1,7 @@
-0440e45599ee69cd1c306967c91970ea *DESCRIPTION
+e3a5886298ecc84bc834de96fe6c7c3e *DESCRIPTION
 c9ba2053e25e44e1a61ca233ed2149b6 *NAMESPACE
 153310080665ca7b25db1d5e6803b3df *R/data.R
-1f1039641115e4c876e61cf68c5b2a66 *R/evalm.R
+4c9bdf71e10b11749f6bb924bdd546e0 *R/evalm.R
 b5da14966ab1005dec9b2b2f8511f7ae *build/vignette.rds
 51d19806f83e6fbdc595d65eafb8b5a0 *data/Sonar.rda
 d19ff9acfa3370a8533830876dc166a6 *data/fit.rda
@@ -13,7 +13,7 @@ d19ff9acfa3370a8533830876dc166a6 *data/fit.rda
 279d2679f7335d9f2a11ae32221c9faa *data/predsc.rda
 b93d438bd94a59a16f7f1944d4d9f1e1 *inst/doc/introduction.R
 2f8dbda2474d67b02793998ef11404cf *inst/doc/introduction.Rmd
-e9b69a5bb13e27191b1cd1395440fafa *inst/doc/introduction.pdf
+bda905f509645eed27912dd17f751f16 *inst/doc/introduction.pdf
 5f71cdaa27d2f9f8e20db875d426d00b *man/LL.Rd
 46cbcb1c62695717f60b67271cc58213 *man/Sonar.Rd
 686a5bcd2f474c4f594cb22bf742b8b9 *man/brier_score.Rd
